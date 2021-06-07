@@ -1,0 +1,136 @@
+body {
+    background: rgb(67, 145, 209);
+    
+     
+}
+.Top-navbar {
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    box-shadow: 5px 5px 5px;
+    margin: 0px;
+}
+.Top-navbar p {
+    font-size: 20px;
+    margin: 10px;
+    font-weight: 900;
+}
+.Quiz-start{
+      height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Quiz-start h1 {
+    color: black;
+    font-size: 70px;
+    
+}
+.Quiz-start button {
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 20px;
+    color:rgb(32, 32, 204);
+    font-weight: 900;
+    cursor: pointer;
+}
+.Quiz-start h2 {
+    
+    font-weight: 900;
+}
+.Quiz-start p {
+    padding: 10px;
+    border-style: solid;
+    border-color: white;
+    border-width: 10px;
+    border-radius: 10px;
+    font-size: 25px;
+    margin-left: 275px;
+    margin-right: 275px;
+    } 
+.questionBox {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 500px;
+    background: #fff;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: rgb(1, 73, 131);
+    background-color: azure;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    }
+.questionBox .questionAsked {
+    padding: 25px 30px 20px 30px;
+    background: #fff;
+    color: black;
+    font-size: 25px;
+    font-weight: 600;
+}
+.questionBox .choicesGiven {
+    padding: 20px 0;
+    display:block;
+}
+.questionBox .choicesGiven .choicesText {
+    background: aliceblue;
+    border: 1px solid #84c5fe;
+    border-radius: 5px;
+    padding: 8px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.questionBox .choicesGiven .choicesText:hover {
+    color: rgb(81, 105, 246);
+    background: rgb(175, 233, 235);
+    border-color: rgb(129, 182, 226);
+}
+.choicesText:last-child{
+    margin-bottom: 0px;
+}
+.questionBox footer{
+    height: 60px;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.questionBox footer .totalQuestions span{
+    display: flex;
+    user-select: none;
+}
+footer .totalQuestions span p{
+    font-weight: 500;
+    padding: 0 5px;
+
+}
+.totalQuestions span p:first-child{
+    padding-left: 0px;
+}
+footer .nextButton{
+    height: 40px;
+    padding: 0 13px;
+    font-size: 18px;
+    font-weight: 400;
+    border: none;
+    outline: none;
+    color: white;
+    background: rgb(67, 106, 197);
+    border-radius: 5px;
+    border: 1px solid rgb(67, 106, 197);
+    cursor: pointer;
+}
+footer .nextButton:hover{
+    background: rgb(31, 98, 223);
+} 
