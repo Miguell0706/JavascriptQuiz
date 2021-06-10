@@ -1,60 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="quiz.css">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="quiz.css" />
 
     <title>Code-Quiz</title>
-</head>
-<body>   <!-- time and highscore navbar-->
+  </head>
+  <body>
+    <!-- time and highscore navbar-->
     <div class="Top-navbar">
-        <a href="quizScore.html"><p>View Highscores</p></a>
-        <p>Time:</p>
+      <a href="quizScore.html"><p>View Highscores</p></a>
+      <div class="Timer">
+        <p>Time: <span class="timerText">50 </span></p>
+      </div>
     </div>
-   <!-- First page of quiz -->
-    <div class= "Quiz-start">
-        <h1>Coding Quiz</h1>
-        <button>Start Quiz</button>
-        <h2> Quiz Rules:</h2>
-        <p>Click "Start Quiz" to begin the countdown and 
-            be transferred to the next page.</p>
-
-        
+    <!-- First page of quiz -->
+    <div class="Quiz-start">
+      <h1>Coding Quiz</h1>
+      <button>Start Quiz</button>
+      <h2>Quiz Rules:</h2>
+      <p>
+        Click "Start Quiz" to begin the countdown and be transferred to the next
+        page. Each question you get incorrect will deduct
+        10 seconds from the timer. The time that is left when you
+        complete all the questions will be your final score.
+      </p>
     </div>
     <!-- Quiz box code -->
-   
-    <div class='questionBox'>
-        <!--question text code-->
-        <div class="questionAsked"></div>
-          <!-- <span>QuestionText</span> -->
-         
-          <!--Choice text code-->
-        <div class="choicesGiven">
-            <div class="choicesText">
-                <!-- <span>meowmoewoemwome</span> -->
-            </div>
 
+    <div class="questionBox">
+      <!--question text code-->
+      <div>
+        <ol class="questionAsked"></ol>
+      </div>
+      <!-- <span>QuestionText</span> -->
+
+      <!--Choice text code-->
+      <div class="choicesGiven">
+        <div class="choicesText">
+          <!-- <span>meowmoewoemwome</span> -->
         </div>
+      </div>
 
-        
-        
+      <!-- Quiz Box footer -->
+      <footer>
+        <div class="totalQuestionBox">
+          <p><span id="totalQuestions">1</span>of 5 Questions</p>
+        </div>
+      </footer>
+    </div>
 
-    <!-- Quiz Box footer -->
-        <footer>
-            <div class="totalQuestions">
-            <span>2 of 5 Questions</span>
-            </div>
-            <button class="nextButton">Next</button>
-
-
-        </footer>
+    <!--make sure this is hidden during the quiz and show once game is over-->
+    <div class="end">
+      <h2>You finsihed the Quiz! Enter your initials here and click submit.</h2>
+      <!--add final score-->
+      <p></p>
+      <!--enter initials-->
+      <p><input type="text" maxlength="3" class="username" /></p>
+      <button class="submit">Submit</button>
     </div>
     
-    
-<script src="quiz.js"></script>
-</body>
-    
+    <script src="quiz.js"></script>
+  </body>
 </html>
