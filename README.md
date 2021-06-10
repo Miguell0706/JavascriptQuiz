@@ -48,3 +48,6 @@ The javascript has been written in order to be able to hide and display elements
 The scores will be listed with the initials on the left and the scores (which will be the time that was left when they completed the quiz) displayed on the right of there initials. They will have the options to both clear the local storage and returning to the main page of the quiz.
 
 ![Screenshot (1720)](https://user-images.githubusercontent.com/82692900/121459900-e9b61600-c960-11eb-82e1-12c3d3feaec5.png)
+
+[Link to the quiz here!](https://miguell0706.github.io/JavascriptQuiz/)
+
